@@ -319,7 +319,13 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script>
+		$(function() {
+			$.getJSON("content.json", function(json) {
+		    	console.log(json); // this will show the info it in firebug console
+			});
+		});
+	</script>
 	</body>
 </html>
 
